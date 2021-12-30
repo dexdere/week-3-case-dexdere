@@ -5,7 +5,8 @@ import HelloPage from "./components/HelloPage";
 function App() {
   return (
     <div className="App">
-      <Login />
+      {/* <Login /> */}
+      <HelloPage />
     </div>
   );
 }
