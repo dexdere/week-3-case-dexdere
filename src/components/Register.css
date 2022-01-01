@@ -1,32 +1,31 @@
-.login-body {
+.register-body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   height: 100vh;
   width: 100vw;
-  background: rgb(17, 185, 222);
-  background: url("/public/vespa_bg.png") no-repeat,
-    linear-gradient(90deg, rgba(17, 185, 222, 1) 0%, rgba(0, 131, 176, 1) 100%);
+  background-color: #f6c645;
 }
 
-.login-title {
+.register-title {
   margin-top: 0px;
 }
 
-.login-main {
+.register-main {
   display: flex;
   height: 84vh;
   width: 74vw;
-  background-image: url("/public/vespa.svg");
+  background-image: url("/public/register_illustration.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-color: white;
+  background-size: 43vw;
   border-radius: 50px;
   box-shadow: 0 0 50px rgba(1, 1, 1, 0.3);
 }
 
-.login {
+.register {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,7 +33,8 @@
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="username"] {
   width: 400px;
   height: 45px;
   border: 1px solid #bcbec0;
@@ -44,17 +44,7 @@ input[type="password"] {
   margin-bottom: 2em;
 }
 
-.forgot-password,
-.register-link {
-  text-decoration: none;
-  color: #465685;
-}
-
-.register-link {
-  font-weight: 600;
-}
-
-.sign-in {
+.create-account {
   background-color: #a93159;
   color: white;
   width: 400px;
@@ -66,30 +56,6 @@ input[type="password"] {
   margin: 1em 0;
 }
 
-.sign-in:hover {
+.create-account:hover {
   cursor: pointer;
-}
-
-.other-sign {
-  color: #798995;
-  text-align: center;
-}
-
-.oauth {
-  display: flex;
-  height: 45px;
-}
-
-.oauth > button {
-  flex-grow: 1;
-  margin: 0 5px;
-  border-radius: 1em;
-  border: 1px solid #bcbec0;
-  background-color: white;
-  border-radius: 2em;
-}
-
-.oauth > button:hover {
-  cursor: pointer;
-  justify-content: center;
 }

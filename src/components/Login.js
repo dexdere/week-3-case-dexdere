@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 export default function Login() {
@@ -24,8 +25,9 @@ export default function Login() {
             <button><img src="https://img.icons8.com/color/30/000000/facebook-new.png" alt="facebook-auth"/></button>
           </span>
 
-          <p className="other-sign">Don’t have an account yet? 
-              <span><a className="register-link" href="./"> Register for free</a></span>
+          <p className="other-sign">
+            Don’t have an account yet? 
+            <Link className="register-link" to="/register"> Register for free</Link>
           </p>
         </div>
       </div>
