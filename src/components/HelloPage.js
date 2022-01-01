@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./HelloPage.css";
 
 export default function HelloPage() {
   return (
@@ -24,8 +26,9 @@ export default function HelloPage() {
           src="https://img.icons8.com/windows/40/000000/long-arrow-down.png"
           alt=""
         />
-
-        <button>Buy me a Coffee</button>
+        <Link to="./Login">
+          <button>Buy me a Coffee</button>
+        </Link>{" "}
       </div>
       <img className="hello-page-png" src="/hello-page.svg" alt="" />
     </div>
