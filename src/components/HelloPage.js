@@ -20,7 +20,7 @@ export default function HelloPage() {
           {" "}
           I wish you luck,
           <br />
-          <span> Drax❤️</span>
+          <span> Batuhan Münger</span>
         </p>
         <img
           src="https://img.icons8.com/windows/40/000000/long-arrow-down.png"
@@ -30,7 +30,7 @@ export default function HelloPage() {
           <button>Buy me a Coffee</button>
         </Link>{" "}
       </div>
-      <img className="hello-page-png" src="/hello-page.svg" alt="" />
+      <img className="hello-page-png" src="/hello_page.svg" alt="" />
     </div>
   );
 }
