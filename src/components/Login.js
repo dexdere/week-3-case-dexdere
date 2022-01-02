@@ -10,10 +10,10 @@ export default function Login() {
           <h1 className="login-title">Login</h1>
 
           <label htmlFor="email">Email</label>
-          <input type="email" placeholder="username@gmail.com" autocomplete="on" required />
+          <input type="email" placeholder="username@gmail.com" autoComplete="on" required />
 
           <label htmlFor="password">Password</label>
-          <input type="password" placeholder="Password" autocomplete="on" required/>
+          <input type="password" placeholder="Password" autoComplete="on" required/>
 
           <span><a className="forgot-password" href="./">Forgot Password?</a></span>
           <button className="sign-in">Sign in</button>
