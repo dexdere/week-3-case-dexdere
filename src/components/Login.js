@@ -30,7 +30,7 @@ export default function Login() {
         localStorage.setItem("username", data.username);
         localStorage.setItem("email", data.email);
         localStorage.setItem("password", data.password);
-        localStorage.setItem("auth", true);
+        localStorage.setItem("auth", data.auth);
         navigate("/main-page");
       } else {
         setInfo("Incomplete or incorrect information.");

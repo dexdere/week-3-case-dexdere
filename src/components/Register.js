@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./Register.css";
 import { postMockAPI } from "../api/RegisterApi";
+import { useNavigate } from "react-router-dom";
 
 const validEmail = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/gim;
 const checkEmpty = /[^\s]/g;
@@ -12,6 +13,8 @@ export default function Register() {
 
   const [info, setInfo] = useState();
   const [color, setColor] = useState();
+
+  const navigate = useNavigate();
 
   function postRegister() {
     let value = {
@@ -31,6 +34,9 @@ export default function Register() {
       password.current.value = "";
       setInfo("Registration successful.");
       setColor("green");
+      setTimeout(() => {
+        navigate("/login");
+      }, 200);
     } else {
       setInfo("Incomplete or incorrect information.");
       setColor("red");
