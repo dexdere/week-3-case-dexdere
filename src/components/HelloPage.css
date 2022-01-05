@@ -11,7 +11,7 @@
 .article {
   grid-column: 1 / 2;
   margin-left: 10em;
-  width: 60vh;
+  width: 30vw;
 }
 
 .article > h1 {

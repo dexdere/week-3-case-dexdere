@@ -6,7 +6,7 @@ export default function HelloPage() {
   return (
     <div className="hello-body">
       <div className="article">
-        <h1>Hello 👋</h1>
+        <h1>Hello {localStorage.getItem("username")}👋</h1>
         <p>
           I hope everyone is safe and sound. I designed different type of
           lending pages,application. it can help others to develop more ideas
@@ -26,7 +26,9 @@ export default function HelloPage() {
           src="https://img.icons8.com/windows/40/000000/long-arrow-down.png"
           alt=""
         />
-        <Link to="./Login">
+        <Link
+          to={localStorage.getItem("auth") === null ? "/login" : "/main-page"}
+        >
           <button>Buy me a Coffee</button>
         </Link>{" "}
       </div>
