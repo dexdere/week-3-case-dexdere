@@ -81,13 +81,11 @@ input[type="text"] {
   height: 45px;
 }
 
-.oauth > button {
+.oauth > img {
   flex-grow: 1;
   margin: 0 5px;
-  border-radius: 1em;
   border: 1px solid #bcbec0;
   background-color: white;
-  border-radius: 2em;
 }
 
 .oauth > button:hover {
