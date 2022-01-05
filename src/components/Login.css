@@ -34,7 +34,8 @@
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"] {
   width: 400px;
   height: 45px;
   border: 1px solid #bcbec0;
@@ -93,3 +94,11 @@ input[type="password"] {
   cursor: pointer;
   justify-content: center;
 }
+
+.eye{
+  cursor: pointer;
+  position: absolute;
+  margin-left: -2%;
+  margin-top: 0.5%;
+}
+

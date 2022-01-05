@@ -34,7 +34,8 @@
 
 input[type="email"],
 input[type="password"],
-input[type="username"] {
+input[type="username"],
+input[type="text"] {
   width: 400px;
   height: 45px;
   border: 1px solid #bcbec0;
@@ -58,4 +59,11 @@ input[type="username"] {
 
 .create-account:hover {
   cursor: pointer;
+}
+
+.eye {
+  cursor: pointer;
+  position: absolute;
+  margin-left: -2%;
+  margin-top: 0.5%;
 }

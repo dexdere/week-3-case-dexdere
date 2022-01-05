@@ -10,7 +10,7 @@ export default function Register() {
     email = useRef(),
     password = useRef();
 
-  function deneme() {
+  function postRegister() {
     let value = {
       username: username.current.value,
       email: email.current.value,
@@ -27,6 +27,10 @@ export default function Register() {
     email.current.value = "";
     password.current.value = "";
   }
+
+  const togglePassword = () =>
+    (password.current.type =
+      password.current.type === "password" ? "text" : "password");
 
   return (
     <div className="register-body">
@@ -53,15 +57,23 @@ export default function Register() {
           />
 
           <label htmlFor="password">Password</label>
-          <input
-            ref={password}
-            type="password"
-            placeholder="Password"
-            autoComplete="on"
-            required
-          />
+          <div>
+            <input
+              ref={password}
+              type="password"
+              placeholder="Password"
+              autoComplete="on"
+              required
+            />
+            <img
+              className="eye"
+              src="https://img.icons8.com/ios/25/000000/visible--v1.png"
+              onClick={togglePassword}
+              alt=""
+            />
+          </div>
 
-          <button onClick={deneme} className="create-account">
+          <button onClick={postRegister} className="create-account">
             Create Account
           </button>
         </div>
