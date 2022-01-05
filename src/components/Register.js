@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Register.css";
 import { postMockAPI } from "../api/RegisterApi";
 
@@ -9,6 +9,9 @@ export default function Register() {
   let username = useRef(),
     email = useRef(),
     password = useRef();
+
+  const [info, setInfo] = useState();
+  const [color, setColor] = useState();
 
   function postRegister() {
     let value = {
@@ -21,11 +24,17 @@ export default function Register() {
       checkEmpty.test(value.username, value.email, value.password) &&
       validEmail.test(value.email);
 
-    if (checkRegex) postMockAPI(value.username, value.email, value.password);
-
-    username.current.value = "";
-    email.current.value = "";
-    password.current.value = "";
+    if (checkRegex) {
+      postMockAPI(value.username, value.email, value.password);
+      username.current.value = "";
+      email.current.value = "";
+      password.current.value = "";
+      setInfo("Registration successful.");
+      setColor("green");
+    } else {
+      setInfo("Incomplete or incorrect information.");
+      setColor("red");
+    }
   }
 
   const togglePassword = () =>
@@ -76,6 +85,10 @@ export default function Register() {
           <button onClick={postRegister} className="create-account">
             Create Account
           </button>
+
+          <h5 style={{ color: color, margin: 0, textAlign: "center" }}>
+            {info}
+          </h5>
         </div>
       </div>
     </div>

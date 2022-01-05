@@ -1,9 +1,12 @@
 const API_KEY = process.env.REACT_APP_REGISTER_API_KEY;
 
+let apiData;
+
 async function getMockAPI() {
   fetch(`${API_KEY}/register`)
     .then((response) => response.json())
-    .then((data) => console.log(data));
+    .then((data) => (apiData = data))
+    .then(() => console.log(apiData));
 }
 
 async function postMockAPI(username, email, password) {
@@ -18,4 +21,4 @@ async function postMockAPI(username, email, password) {
   });
 }
 
-export { getMockAPI, postMockAPI };
+export { getMockAPI, postMockAPI, apiData };
