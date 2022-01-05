@@ -12,17 +12,23 @@ export default function Login() {
 
   useEffect(() => {
     getMockAPI();
-  }, [])
+  }, []);
 
   function checkLogin(e) {
     e.preventDefault();
-    
+
+    // eslint-disable-next-line array-callback-return
     apiData.map((data) => {
-      if (data.email === email.current.value && data.password === password.current.value) {
+      if (
+        data.email === email.current.value &&
+        data.password === password.current.value
+      ) {
         email.current.value = "";
         password.current.value = "";
         setInfo("Registration successful.");
         setColor("green");
+        localStorage.setItem("email", data.email);
+        localStorage.setItem("password", data.password);
       } else {
         setInfo("Incomplete or incorrect information.");
         setColor("red");
