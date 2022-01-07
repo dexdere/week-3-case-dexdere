@@ -6,7 +6,6 @@ async function getMockAPI() {
   fetch(`${API_KEY}/register`)
     .then((response) => response.json())
     .then((data) => (apiData = data))
-    .then(() => console.log(apiData));
 }
 
 async function postMockAPI(username, email, password) {

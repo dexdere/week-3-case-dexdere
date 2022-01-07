@@ -76,9 +76,9 @@ export default function Login() {
           </div>
 
           <span>
-            <a className="forgot-password" href="./">
+            <Link className="forgot-password" to="/forgot-password">
               Forgot Password?
-            </a>
+            </Link>
           </span>
           <button className="sign-in" onClick={checkLogin}>
             Sign in
@@ -86,6 +86,7 @@ export default function Login() {
           <h5 style={{ color: color, margin: 0, textAlign: "center" }}>
             {info}
           </h5>
+          
           <p className="other-sign">or continue with</p>
 
           <span className="oauth">

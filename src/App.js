@@ -10,6 +10,7 @@ import Login from "./components/Login";
 import HelloPage from "./components/HelloPage";
 import Register from "./components/Register";
 import MainPage from "./components/MainPage";
+import ForgotPassword from "./components/ForgotPassword";
 
 function PrivateRoute({ children }) {
   return localStorage.getItem("auth") ? <Navigate to="/main-page" /> : children;
@@ -28,8 +29,9 @@ export default function App() {
               </PrivateRoute>
             }
           />
-          <Route path="/register" element={<Register />} />
           <Route path="/main-page" element={<MainPage />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/" element={<HelloPage />} />
         </Routes>
       </div>
