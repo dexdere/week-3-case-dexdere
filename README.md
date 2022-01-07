@@ -1,6 +1,8 @@
 # Ödev 2 - Todo
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b13066c1-3740-468d-b7ae-bacdeb8bba21/deploy-status)](https://app.netlify.com/sites/elegant-dubinsky-369d73/deploys) - [Live Demo](https://elegant-dubinsky-369d73.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b13066c1-3740-468d-b7ae-bacdeb8bba21/deploy-status)](https://app.netlify.com/sites/elegant-dubinsky-369d73/deploys)
+<br>
+[Live Demo](https://elegant-dubinsky-369d73.netlify.app/)
 
 Selamlar herkese 🙂 
 
