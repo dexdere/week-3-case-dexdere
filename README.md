@@ -1,4 +1,4 @@
-# Ödev 2 - Todo
+# Ödev 3
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b13066c1-3740-468d-b7ae-bacdeb8bba21/deploy-status)](https://app.netlify.com/sites/elegant-dubinsky-369d73/deploys)
 <br>
