@@ -1,0 +1,51 @@
+.main-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: #5a38fa;
+  /* background-color: #0136f4; */
+}
+
+.main-title {
+  color: #0731c3;
+}
+
+.main-container {
+  display: grid;
+  height: 84vh;
+  width: 74vw;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 0 50px rgba(1, 1, 1, 0.3);
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.pazarama {
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 1 / 2;
+  margin-left: 5em;
+}
+
+.pazarama-logo {
+  width: 50%;
+}
+
+.download-app {
+  display: flex;
+  height: 45px;
+}
+
+.download-app > a {
+  flex-grow: 1;
+  margin: 1.5em 5px;
+}
+
+.pazarama-image {
+  grid-column: 2 / 3;
+  margin-left: 5em;
+}
